@@ -99,45 +99,6 @@ $(".section.is-home-logos").each(function (index) {
   );
 });
 
-$(".section.is-home-about").each(function (index) {
-  let target = $(this).find("[animation='parallax-1']");
-  let target2 = $(this).find("[animation='parallax-2']");
-  let target3 = $(this).find("[animation='parallax-3']");
-
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: $(this),
-      start: "top bottom",
-      end: "bottom top",
-      ease: "Quint.easeOut",
-      duration: 1,
-      scrub: true,
-    },
-  });
-  tl.from(
-    target,
-    {
-      y: "80rem",
-    },
-    0
-  );
-  tl.from(
-    target2,
-    {
-      y: "-40rem",
-    },
-    0
-  );
-  tl.from(
-    target3,
-    {
-      y: "60rem",
-      x: "40rem",
-    },
-    0
-  );
-});
-
 // PAGE COLOR POWER-UP
 window.addEventListener("DOMContentLoaded", (event) => {
   // attribute value checker
