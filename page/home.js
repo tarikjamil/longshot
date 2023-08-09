@@ -54,3 +54,25 @@ $(".section.is--home-afterhero").each(function (index) {
     0
   );
 });
+
+$(".section.is-home-terraria").each(function (index) {
+  let target = $(this).find(".relative");
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: $(this),
+      start: "top bottom",
+      end: "top center",
+      ease: "Quint.easeOut",
+      duration: 1,
+      scrub: true,
+    },
+  });
+  tl.from(
+    target,
+    {
+      scale: 0.6,
+    },
+    0
+  );
+});
