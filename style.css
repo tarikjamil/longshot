@@ -1,0 +1,47 @@
+.main-wrapper {
+  opacity: 0;
+}
+
+.split-line {
+  overflow: hidden;
+}
+
+.navbar.is--scrolled {
+  background-color: white;
+}
+
+.w-editor-edit-fade-in .main-wrapper {
+  opacity: 1;
+}
+
+/* Remove default appearance for all browsers */
+select {
+  -webkit-appearance: none; /* Remove default styling in WebKit browsers (like Safari and Chrome) */
+  -moz-appearance: none; /* Remove default styling in Firefox */
+  appearance: none; /* Modern general property to remove default styling */
+  background: none; /* Remove any default background */
+  border: none; /* Remove border */
+}
+
+/* Optional: Add some custom styles */
+select.custom {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* For Safari, add a custom arrow */
+select.custom::-ms-expand {
+  display: none;
+}
+
+select.custom::after {
+  content: "▼"; /* This is a downward arrow symbol */
+  font-size: 10px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
