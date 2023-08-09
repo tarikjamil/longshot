@@ -176,33 +176,19 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
-// slider testimonial
-function slider1() {
-  let splides = $(".slider-pastprojects");
-  for (let i = 0, splideLength = splides.length; i < splideLength; i++) {
-    new Splide(splides[i], {
-      // Desktop on down
-      perPage: 2,
-      perMove: 1,
-      type: "slide", // 'loop' or 'slide'
-      gap: "48em", // space between slides
-      arrows: "slider", // 'slider' or false
-      pagination: false, // 'slider' or false
-      breakpoints: {
-        991: {
-          // Tablet
-          perPage: 1,
-        },
-        767: {
-          // Mobile Landscape
-          perPage: 1,
-        },
-        479: {
-          // Mobile Portrait
-          perPage: 1,
-        },
+// slider
+document.addEventListener("DOMContentLoaded", function () {
+  let splide = new Splide(".slider-pastprojects", {
+    type: "slide",
+    perPage: 2,
+    perMove: 1,
+    gap: "48rem",
+    breakpoints: {
+      991: {
+        // Tablet
+        arrows: false,
       },
-    }).mount();
-  }
-}
-slider1();
+    },
+  });
+  splide.mount();
+});
