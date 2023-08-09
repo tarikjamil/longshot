@@ -117,14 +117,14 @@ $(".section.is-home-about").each(function (index) {
   tl.from(
     target,
     {
-      y: "-40rem",
+      y: "40rem",
     },
     0
   );
   tl.from(
     target2,
     {
-      y: "40rem",
+      y: "-40rem",
     },
     0
   );
