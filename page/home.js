@@ -187,6 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
       991: {
         // Tablet
         arrows: false,
+        gap: "24rem",
       },
     },
   });
