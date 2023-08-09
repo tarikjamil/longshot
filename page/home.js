@@ -29,21 +29,21 @@ $(".section.is--home-afterhero").each(function (index) {
     },
     0
   );
-  tl.to(
+  tl.from(
     target2,
     {
       scale: 1.3,
     },
     0
   );
-  tl.to(
+  tl.from(
     target3,
     {
       scale: 1.4,
     },
     0
   );
-  tl.to(
+  tl.from(
     target4,
     {
       scale: 1.6,
