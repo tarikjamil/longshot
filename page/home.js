@@ -177,7 +177,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 $(".section.is--cta").each(function (index) {
-  let targetparent = $(this).find(".home--hero-image-wrapper");
+  let targetparent = $(this).find(".cta--img-parent");
   let target = $(this).find(".home--hero--img-bg");
   let target2 = $(this).find(".home--hero--img-bg-1");
   let target3 = $(this).find(".home--hero--img-bg-2");
