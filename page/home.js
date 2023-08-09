@@ -33,6 +33,7 @@ $(".section.is--home-afterhero").each(function (index) {
     target2,
     {
       scale: 1.3,
+      y: "40rem",
     },
     0
   );
@@ -40,6 +41,7 @@ $(".section.is--home-afterhero").each(function (index) {
     target3,
     {
       scale: 1.4,
+      y: "20rem",
     },
     0
   );
@@ -47,6 +49,7 @@ $(".section.is--home-afterhero").each(function (index) {
     target4,
     {
       scale: 1.6,
+      y: "10rem",
     },
     0
   );
