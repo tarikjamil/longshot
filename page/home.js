@@ -117,7 +117,7 @@ $(".section.is-home-about").each(function (index) {
   tl.from(
     target,
     {
-      y: "40rem",
+      y: "80rem",
     },
     0
   );
@@ -132,6 +132,7 @@ $(".section.is-home-about").each(function (index) {
     target3,
     {
       y: "60rem",
+      x: "40rem",
     },
     0
   );
