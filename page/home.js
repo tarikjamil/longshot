@@ -78,7 +78,7 @@ $(".section.is-home-terraria").each(function (index) {
 });
 
 $(".section.is-home-logos").each(function (index) {
-  let target = $(".section.is-home-terraria").find(".relative");
+  let target = $(".section.is-home-terraria");
 
   let tl = gsap.timeline({
     scrollTrigger: {
