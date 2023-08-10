@@ -55,49 +55,53 @@ $(".section.is--home-afterhero").each(function (index) {
   );
 });
 
-$(".section.is-home-terraria").each(function (index) {
-  let target = $(this).find(".relative");
+if (window.innerWidth > 992) {
+  // Your JavaScript code here
 
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: $(this),
-      start: "top bottom",
-      end: "top center",
-      ease: "Quint.easeOut",
-      duration: 1,
-      scrub: true,
-    },
+  $(".section.is-home-terraria").each(function (index) {
+    let target = $(this).find(".relative");
+
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: $(this),
+        start: "top bottom",
+        end: "top center",
+        ease: "Quint.easeOut",
+        duration: 1,
+        scrub: true,
+      },
+    });
+    tl.from(
+      target,
+      {
+        scale: 0.6,
+      },
+      0
+    );
   });
-  tl.from(
-    target,
-    {
-      scale: 0.6,
-    },
-    0
-  );
-});
 
-$(".section.is-home-logos").each(function (index) {
-  let target = $(".section.is-home-terraria");
+  $(".section.is-home-logos").each(function (index) {
+    let target = $(".section.is-home-terraria");
 
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: $(this),
-      start: "top bottom",
-      end: "top top",
-      ease: "Quint.easeOut",
-      duration: 1,
-      scrub: true,
-    },
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: $(this),
+        start: "top bottom",
+        end: "top top",
+        ease: "Quint.easeOut",
+        duration: 1,
+        scrub: true,
+      },
+    });
+    tl.to(
+      target,
+      {
+        scale: 0.6,
+      },
+      0
+    );
   });
-  tl.to(
-    target,
-    {
-      scale: 0.6,
-    },
-    0
-  );
-});
+}
 
 // PAGE COLOR POWER-UP
 window.addEventListener("DOMContentLoaded", (event) => {
