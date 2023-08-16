@@ -39,6 +39,14 @@ function pageLoad() {
     duration: 0.6,
     delay: -0.6,
   });
+  tl.from("[animation='zoomin']", {
+    scale: "1.2",
+    opacity: "0",
+    stagger: { each: 0.1, from: "start" },
+    ease: "Quint.easeOut",
+    duration: 0.6,
+    delay: -0.6,
+  });
 }
 pageLoad();
 
